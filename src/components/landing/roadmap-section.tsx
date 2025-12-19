@@ -51,7 +51,7 @@ export function RoadmapSection() {
         </div>
 
         <div className="relative max-w-5xl mx-auto">
-          <div className="absolute left-0 top-0 h-full w-[1px] md:left-1/2 md:-translate-x-1/2 bg-gradient-to-b from-transparent via-primary/50 to-transparent" aria-hidden="true"></div>
+          <div className="absolute left-0 top-0 h-full w-[1px] md:left-1/2 md:-translate-x-1/2 bg-gradient-to-b from-transparent via-primary to-transparent" aria-hidden="true"></div>
           <div className="space-y-12">
             {timelineItems.map((item, index) => (
               <MotionDiv
