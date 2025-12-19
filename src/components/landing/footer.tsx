@@ -16,8 +16,12 @@ export function Footer() {
           
           <div>
             <h4 className="font-semibold text-white">Contact</h4>
-            <p className="text-slate-400 mt-2 text-sm">Hyderabad, Telangana, India</p>
-            <a href="mailto:info@pathlabspl.com" className="text-slate-400 mt-1 text-sm block hover:text-primary transition-colors">info@pathlabspl.com</a>
+            <div className="text-slate-400 mt-2 text-sm space-y-1">
+              <p>Hyderabad, Telangana, India</p>
+              <a href="mailto:contactpathlabs@gmail.com" className="block hover:text-primary transition-colors">contactpathlabs@gmail.com</a>
+              <a href="tel:+91968462110" className="block hover:text-primary transition-colors">+91 968462110</a>
+              <a href="tel:+917993269138" className="block hover:text-primary transition-colors">+91 79932 69138</a>
+            </div>
           </div>
 
           <div>
