@@ -1,3 +1,5 @@
+"use client";
+
 import { MotionDiv } from "@/components/landing/motion-div";
 import { GraduationCap, Lightbulb, Users, Target } from "lucide-react";
 import type { LucideIcon } from "lucide-react";

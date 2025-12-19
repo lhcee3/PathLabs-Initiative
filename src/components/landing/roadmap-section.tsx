@@ -1,3 +1,5 @@
+"use client";
+
 import { MotionDiv } from "@/components/landing/motion-div";
 import { Code2, Cpu, Laptop } from "lucide-react";
 
