@@ -50,8 +50,8 @@ export function Navbar() {
 
           <div className="flex items-center gap-4">
             <Button asChild className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground">
-              <a href="https://example.com/google-form-link" target="_blank" rel="noopener noreferrer">
-                Join Free Demo
+              <a href="mailto:contactpathlabs@gmail.com" target="_blank" rel="noopener noreferrer">
+                Know More
               </a>
             </Button>
             

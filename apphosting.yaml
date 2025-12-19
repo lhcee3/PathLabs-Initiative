@@ -1,5 +1,5 @@
-# Settings to manage and configure a Firebase App Hosting backend.
-# https://firebase.google.com/docs/app-hosting/configure
+# PathLabs PL - App Hosting Configuration
+# Deploy configuration for PathLabs PL platform
 
 runConfig:
   # Increase this value if you'd like to automatically spin up

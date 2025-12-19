@@ -19,8 +19,8 @@ export function RegistrationSection() {
               Book a free, no-obligation demo session to experience our teaching style firsthand.
             </p>
             <Button asChild size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-base rounded-full shadow-lg shadow-primary/20 transition-transform hover:scale-105">
-              <a href="https://example.com/google-form-link" target="_blank" rel="noopener noreferrer">
-                Register for Free Demo
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHWPMPcKj1dP4e895ZAK-yLwHbFTq3TgiRsjfwQP9GogLl6Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+                Book Free Demo
               </a>
             </Button>
           </div>

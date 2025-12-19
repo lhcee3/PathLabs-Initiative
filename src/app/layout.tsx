@@ -3,8 +3,11 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'PathLabs PL Landing',
-  description: 'Future-Proof Your Child\'s Future with PATHLABS PL Coding Tuition.',
+  title: 'PATHLABS PL - Tech Creator Academy',
+  description: 'Transform students into tech creators. Learn Python, Java, Web Development, and DSA to build a market-ready portfolio.',
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({

@@ -18,7 +18,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, ease: "easeInOut" }}
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-white to-slate-400">
-              Future-Proof Your Child's Future.
+              Build Your Career Before College.
             </h1>
           </MotionDiv>
           <MotionDiv
@@ -26,8 +26,9 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
           >
-            <p className="mt-6 text-lg md:text-xl text-slate-300 max-w-2xl mx-auto">
-              Grades 6-11. From Java/Python foundations to Market-Ready Web Dev & DSA.
+            <p className="mt-6 text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+              Master Python & Java. Dominate Web Development. Crack DSA interviews.<br className="hidden sm:block" /> 
+              For grades 6-11, we create market-ready developers with real portfolios.
             </p>
           </MotionDiv>
           <MotionDiv
@@ -37,8 +38,8 @@ export function HeroSection() {
             className="mt-10"
           >
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-base rounded-full shadow-lg shadow-primary/20 transition-transform hover:scale-105">
-              <a href="#register">
-                Register for a Free Demo
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHWPMPcKj1dP4e895ZAK-yLwHbFTq3TgiRsjfwQP9GogLl6Q/viewform?usp=header">
+                Express Interest
               </a>
             </Button>
           </MotionDiv>
