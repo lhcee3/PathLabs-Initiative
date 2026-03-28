@@ -1,85 +1,55 @@
 "use client";
 
 import { MotionDiv } from "@/components/landing/motion-div";
-import { Card, CardContent } from "@/components/ui/card";
-import { LinkedinIcon } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
+
+const outcomes = [
+  "A fully rewritten, ATS-friendly resume",
+  "Keyword strategy for your target role",
+  "Bullet points that show impact, not just duties",
+  "LinkedIn headline & summary rewrite tips",
+  "A prioritized list of job boards to apply on",
+  "Follow-up email templates that get replies",
+  "Honest feedback on gaps and how to address them",
+  "A 7-day action plan to start getting callbacks",
+];
 
 export function InstructorsSection() {
-  const instructors = [
-    {
-      name: "Sai Aneesh ",
-      linkedIn: "https://www.linkedin.com/in/saianeeshg90/",
-      title: "Lead Instructor",
-      bio: "Expert in Python ,Web Development with years of industry experience",
-    },
-    {
-      name: "Sujay Hiremath",
-      linkedIn: "https://www.linkedin.com/in/sujay-hiremath-672931255/",
-      title: "Senior Instructor",
-      bio: "Specialist in Java ,Data Structures, Algorithms, and competitive programming",
-    },
-  ];
-
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      {/* Background accent */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background"></div>
-      
-      <div className="container mx-auto relative z-10">
-        <MotionDiv
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-purple-500 to-primary">
-              Meet The Instructors
-            </span>
-          </h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            Learn from industry professionals who are passionate about building the next generation of tech creators
-          </p>
-        </MotionDiv>
+    <section id="outcomes" className="py-16 sm:py-24 lg:py-32 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-4xl mx-auto">
+          <MotionDiv
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-10 sm:mb-14"
+          >
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
+              What you'll walk away with
+            </h2>
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-muted-foreground">
+              Every session is packed with actionable deliverables — not vague advice.
+            </p>
+          </MotionDiv>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {instructors.map((instructor, index) => (
-            <MotionDiv
-              key={instructor.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-            >
-              <Card className="bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 h-full">
-                <CardContent className="p-8">
-                  <div className="flex items-start justify-between mb-4">
-                    <div>
-                      <h3 className="text-2xl font-bold text-white mb-1">
-                        {instructor.name}
-                      </h3>
-                      <p className="text-primary font-semibold">
-                        {instructor.title}
-                      </p>
-                    </div>
-                    <a
-                      href={instructor.linkedIn}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors group"
-                      aria-label={`${instructor.name}'s LinkedIn profile`}
-                    >
-                      <LinkedinIcon className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
-                    </a>
-                  </div>
-                  <p className="text-slate-300 leading-relaxed">
-                    {instructor.bio}
-                  </p>
-                </CardContent>
-              </Card>
-            </MotionDiv>
-          ))}
+          <div className="grid grid-cols-1 gap-3 max-w-sm mx-auto sm:max-w-4xl sm:grid-cols-2 sm:gap-4">
+            {outcomes.map((item, i) => (
+              <MotionDiv
+                key={item}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.07 }}
+                className="flex items-start gap-3 p-3.5 sm:p-4 rounded-xl bg-card border border-border hover:border-primary/40 transition-colors duration-300 shadow-sm"
+              >
+                <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0 mt-0.5" />
+                <span className="text-foreground text-xs sm:text-sm font-medium leading-snug">{item}</span>
+              </MotionDiv>
+            ))}
+          </div>
         </div>
       </div>
     </section>
