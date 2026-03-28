@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdzJpi4-NLq4kn1BH8VAZXEY52NykGvqwYLbezxLSdPIvSCFA/viewform?usp=publish-editor";
 const EMAIL = "contactpathlabs@gmail.com";
-const PHONE = "+91 968462110";
+const PHONE = "+91 9618462110";
 
 export default function BookPage() {
   const [revealed, setRevealed] = useState(false);
